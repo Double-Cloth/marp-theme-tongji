@@ -112,8 +112,12 @@ blockquote {
     max-width: 50%;
 }
 
+/* 优先使用 JetBrains Mono，回退到常见等宽字体列表 */
+code, pre, pre code {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, "Fira Code", "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
+}
+
 code {
-    font-family: 'Fira Code', 'Microsoft YaHei UI', 'Courier New', monospace;
     color: var(--color-highlight);
 }
 
