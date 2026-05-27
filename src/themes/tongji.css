@@ -3,65 +3,92 @@
 
 :root {
     --color-background: white;
-    --color-foreground: #005bab;
+    --color-foreground: #005BAB;
     --color-highlight: lightskyblue;
     --font-family-paragraph: "Noto Serif SC", serif;
 }
+
 img[alt~="center"] {
     display: block;
     margin: 0 auto;
 }
+
 section {
-    background-image: url("./images/background.jpg");
+    background-image: url("./images/assets/background.png");
     background-size: 100%;
 }
 
 section.title {
-    background-image: url("./images/title.jpg");
+    background-image: url("./images/assets/title.png");
 }
+
 section.title h1 {
     top: 30%;
     left: 5%;
     font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: var(--color-background);
 }
+
 section.title h2 {
     position: absolute;
     left: 5%;
     top: 40%;
     font-size: 30px;
     color: var(--color-highlight);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 section.title p {
     position: absolute;
     left: 5%;
     top: 60%;
 }
+
 section.chapter {
-    background-image: url("./images/chapter.jpg");
+    background-image: url("./images/assets/chapter.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 section.chapter h1 {
-    position: relative;
+    position: static;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     color: var(--color-foreground);
+    margin: 0;
 }
+
 p {
     font-family: var(--font-family-paragraph);
 }
+
 p strong {
     color: var(--color-foreground);
 }
+
 h1 {
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 23px;
+    left: 25px;
     color: var(--color-background);
     font-size: 30px;
 }
-h2, h3, h4, h5, h6 {
+
+h2:not(.title h2) {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-background);
+    font-size: 26px;
+}
+
+h3, h4, h5, h6 {
     color: var(--color-foreground);
 }
+
 ul {
     font-family: var(--font-family-paragraph);
 }
@@ -89,9 +116,11 @@ code {
     font-family: 'Fira Code', 'Microsoft YaHei UI', 'Courier New', monospace;
     color: var(--color-highlight);
 }
+
 pre code {
     color: black;
 }
+
 th {
     color: var(--color-foreground);
 }
@@ -101,8 +130,8 @@ td {
 }
 
 .grid-two {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2em;
 }

@@ -1,6 +1,6 @@
 {
     "markdown.marp.themes": [
-      "./themes/tongji.css",
+      "./src/themes/tongji.css",
     ],
     "markdown.marp.html": "all"
 }
