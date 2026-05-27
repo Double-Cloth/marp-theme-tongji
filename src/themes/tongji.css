@@ -118,7 +118,7 @@ code, pre, pre code {
 }
 
 code {
-    color: var(--color-highlight);
+    color: var(--color-foreground);
 }
 
 pre code {
