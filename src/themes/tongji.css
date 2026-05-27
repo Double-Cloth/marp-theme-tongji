@@ -4,7 +4,7 @@
 :root {
     --color-background: white;
     --color-foreground: #005BAB;
-    --color-highlight: lightskyblue;
+    --color-highlight: #a4d3f3;
     --font-family-paragraph: "Noto Serif SC", serif;
 }
 
@@ -78,11 +78,12 @@ h1 {
 
 h2:not(.title h2) {
     position: absolute;
-    top: 2px;
-    left: 50%;
+    top: 0;
+    left: 75%;
+    width: max-content;
     transform: translateX(-50%);
-    color: var(--color-background);
-    font-size: 26px;
+    color: rgb(225 225 225);
+    font-size: 30px;
 }
 
 h3, h4, h5, h6 {
