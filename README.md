@@ -1,7 +1,7 @@
 # marp-theme-tongji
 
 ## 项目简介
-本仓库提供一个为 Marp 制作的「同济」风格幻灯片主题（CSS），并附带示例源码与导出示例，适用于教学、报告与学术演示。
+本仓库提供一个用 Marp 制作的「同济」风格幻灯片主题，并附带示例源码与导出示例，适用于教学、报告与学术演示。
 
 ## 主要特性
 - 同济视觉风格的配色与章节页样式
@@ -26,7 +26,7 @@ cd marp-theme-tongji
 
 - 安装 VS Code 扩展 `Marp for VS Code`，打开 [src/demo.md](src/demo.md) 并使用扩展的预览/导出功能。
 
-4. 使用 Marp CLI 导出 HTML（示例命令）：
+4. 使用 Marp CLI 导出 HTML（示例）：
 
 ```
 npx @marp-team/marp-cli src/demo.md -o export/demo.html --theme src/themes/tongji.css
